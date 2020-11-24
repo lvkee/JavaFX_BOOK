@@ -4,9 +4,10 @@ import java.sql.*;
 
 public interface DAO {
     //    String driver = "com.mysql.jdbc.Driver";
-    String url = "jdbc:mysql://localhost:3306/exp5?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
-    String user = "root";
-    String password = "12345678Aa.";
+//     以下“******”部分更改为自己的数据库信息
+    String url = "jdbc:mysql://localhost:3306/******?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC";
+    String user = "******";
+    String password = "******";
 
     default Connection getConnection() throws DaoException {
         try {
